@@ -1,0 +1,339 @@
+@font-face {
+  font-family: Texto;
+  src: url(../fonts/Baloo_Da_2/BalooDa2-Regular.ttf);
+
+}
+
+:root {
+  --color1: rgba(242, 41, 115, 1);
+  --color2: rgb(182, 221, 39);
+  --color3: rgba(3, 39, 55, 1);
+  --color3d: rgb(5, 30, 45);
+  --color4: rgba(255, 205, 132, 1);
+  --color5: rgb(44, 189, 222);
+  --sombra: rgba(0, 0, 0, 0.5);
+  --fondo: rgba(255, 255, 255, 1);
+  --titulos: 33px;
+  --margenes: 60px;
+  --espacios: 10px;
+  --espacios-contenido: 45px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: texto, Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  font-family: "open sans";
+  background-color: #1B2027;
+  
+}
+
+.title-section{
+  font-size: 70px;
+  color: white;
+}
+
+img {
+  vertical-align: top;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom,
+      rgba(3, 39, 55, 0.4),
+      rgba(242, 41, 115, 0.8),
+      rgba(255, 205, 132, 0.6)),
+    url(https://spaceandbeyondbox.com/wp-content/uploads/2019/09/sub4_hero.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.introduccion{
+  color: white;
+}
+.abajo {
+  color: white;
+}
+
+#mission{
+  background-color: #1498a4;
+  width: 90%;
+  height: 200px;
+  padding: 50px 50px 50px 50px;
+}
+
+#mission > h2{
+  font-size: 50px;
+  color: white;
+}
+
+#cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 400px;
+}
+
+.ada-team{
+  width: 400px;
+}
+
+.ada.team > img{
+  position: relative;
+}
+
+.formularios > h1, label{
+  color: white;
+}
+
+#center{
+  height: 600px
+  ;
+}
+
+/* nav {
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+} */
+
+.btn-solar{
+  background-color: rgb(182, 221, 39);
+  color: black;
+  width: 50%;
+  cursor: pointer;
+  border: solid rgb(182, 221, 39);
+}
+
+.nav1 {
+  background: transparent;
+  height: 80px;
+  color: var(--fondo);
+}
+
+.nav2 {
+  background: var(--color3);
+  height: 100px;
+  color: var(--fondo);
+  z-index: 10;
+
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+.contenedor-nav {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  height: inherit;
+  overflow: hidden;
+}
+
+#open span {
+  color: white;
+}
+
+nav .enlaces a {
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 17px;
+  font-size: 17px;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: inherit;
+}
+
+nav .enlaces a:hover {
+  border-bottom: 3px solid #1498a4;
+  transition: 0.6s;
+}
+
+i.fab {
+  cursor: pointer;
+
+  transform: scale(1);
+  transition: 0.5s transform;
+}
+
+i.fab:hover {
+  transform: scale(1.2);
+  transition: 0.1s transform;
+}
+
+/* .logo, .logo img {
+  height: 80px;
+} */
+
+.icono {
+  display: none;
+  font-size: 24px;
+  padding: 23.5px 20px;
+}
+
+.textos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.textos>h1 {
+  font-size: 80px;
+}
+
+.textos>h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* Footer */
+
+footer {
+  background: url(https://www.diyphotography.net/wp-content/uploads/2017/04/Great-Observatories-Unique-Views-of-the-Milky-Way.jpg);
+  background-size: cover;
+}
+
+.marca-logo {
+  width: 100%;
+  margin: auto;
+  margin-bottom: var(--espacios);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.marca-logo img {
+  width: 300px;
+  height: 300px;
+}
+
+.iconos {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.fab {
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: var(--espacios);
+  display: inline-block;
+}
+
+
+#dibujo > img{
+  width: 800px;
+}
+
+#dibujo{
+  color: white;
+}
+
+footer p {
+  margin-top: var(--espacios);
+}
+
+/* MODO TABLETA  */
+@media screen and (max-width: 700px) {
+  .nav2 {
+    color: #fff;
+  }
+
+  .icono {
+    display: block;
+    cursor: pointer;
+  }
+
+  .enlaces {
+    position: fixed;
+    top: 80px;
+    background: #2c3e50;
+    left: 0;
+    height: 100%;
+    transition: 1s;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .enlaces a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #34495e;
+    color: #fff;
+  }
+
+  .textos>h1 {
+    font-size: 70px;
+  }
+
+  .textos>h2 {
+    font-size: 35px;
+  }
+
+  .content-card {
+    width: 48%;
+    margin-bottom: var(--margenes);
+  }
+
+  .textos {
+    font-size: 15px;
+  }
+
+  :root {
+    --margenes: 30px;
+  }
+}
+
+/* MODO MOBILE */
+@media screen and (max-width: 500px) {
+  :root {
+    --espacios-contenido: 25px;
+  }
+
+  .content-card {
+    width: 90%;
+  }
+
+  .textos {
+    font-size: 15px;
+  }
+
+  .caja-servicios {
+    width: 90%;
+    margin-bottom: var(--margenes);
+    cursor: pointer;
+  }
+
+  .cont-work {
+    width: 85%;
+  }
+
+  .marca-logo {
+    width: 80%;
+  }
+
+  .iconos {
+    margin: auto;
+  }
+}
